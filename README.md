@@ -1,11 +1,11 @@
 # MQL4-TradeManager
-MQL5のOnTradeをMQL4でも使うためのモジュール
+OnTrade (This function is called when the Trade event occurs) for MQL4.
 
 
 ## Description
-取引が発生する毎に処理を実行したいケースが有ったので調べたところ、MQL5にはOnTradeという定義済みイベントが存在した。  
-しかしこのOnTradeはMQL4のEAでは実行されなかった。  
-そこでOnTradeに近い動作を再現するために作成したのが本モジュールである。  
+Since there was a case where we wanted to execute processing every time a transaction occurred, as a result of checking, there was a predefined event called OnTrade in MQL5.  
+However, this OnTrade was not executed in MQL4.  
+Therefore, this module is created to reproduce the operation close to OnTrade.
 
 
 ## Requirement
@@ -13,14 +13,14 @@ MQL5のOnTradeをMQL4でも使うためのモジュール
 
 
 ## Install
-1. TradeManager.mqhをダウンロード
-2. データフォルダを開き、/MQL4/Includes/mql4_modules/TradeManager/TradeManager.mqhとして保存
+1. Download TradeManager.mqh
+2. Save the file to /MQL4/Includes/mql4_modules/TradeManager/TradeManager.mqh
 
 
 ## Usage
-1. TradeManager.mqhをinclude
-2. OnInit内でTradeManager::Init();を実行
-3. OnTick内でTradeManager::Run();を実行
-4. void OnTrade関数を実装
+1. Include TradeManager.mqh.
+2. Execute TradeManager::Init(); in OnInit function.
+3. Execute TradeManager::Run(); in OnTick function.
+4. Implement the OnTick function.
 
-上記の実装によりOnTick内でポジションの変化を検知し、変化があった場合はOnTrade関数が実行されます。
+The OnTick detects changes in position, and if there is a change, the OnTrade function is executed.
