@@ -21,6 +21,6 @@ Therefore, this module is created to reproduce the operation close to OnTrade.
 1. Include TradeManager.mqh.
 2. Execute TradeManager::Init(); in OnInit function.
 3. Execute TradeManager::Run(); in OnTick function.
-4. Implement the OnTick function.
+4. Implement the OnTrade function.
 
 The OnTick detects changes in position, and if there is a change, the OnTrade function is executed.
