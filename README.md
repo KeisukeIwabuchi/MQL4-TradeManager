@@ -14,7 +14,7 @@ Therefore, this module is created to reproduce the operation close to OnTrade.
 
 ## Install
 1. Download TradeManager.mqh
-2. Save the file to /MQL4/Includes/mql4_modules/TradeManager/TradeManager.mqh
+2. Save the file to /MQL4/Include/mql4_modules/TradeManager/TradeManager.mqh
 
 
 ## Usage
